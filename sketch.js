@@ -4,6 +4,7 @@ let XanhItal;
 let rot = 0;
 
 
+
 function preload() {
 Stalinist = loadFont('addons/StalinistOne-Regular.ttf');
 Xanh = loadFont('addons/XanhMono-Regular.ttf');
