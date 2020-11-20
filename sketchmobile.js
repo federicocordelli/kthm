@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background('blue');
+  background('red');
 
 
 
@@ -142,29 +142,29 @@ rotateX(value);
 rotateY(value);
 scale(1+value,1+value);
 
-fill('red');
+fill('blue');
 text("HYBRID",0,0);
 pop();
 
 push();
-rotateZ(rot/20000);
-rotateX(rot/5000);
-rotateY(rot/50000);
-scale((-rot+100000)/100000,(-rot+100000)/100000);
-translate(0,0,rot/100);
+rotateZ(value);
+rotateX(value);
+rotateY(value);
+scale(1+value,1+value);
+translate(0,0,value);
 
-fill('white');
+fill('yellow');
 text("HYBRID",0,0);
 pop();
 
 push();
-rotateZ(rot/20000);
-rotateX(rot/5000);
-rotateY(rot/50000);
-scale((-rot+100000)/100000,(-rot+100000)/100000);
-translate(0,0,-(rot/100));
+rotateZ(value);
+rotateX(value);
+rotateY(value);
+scale(1+value,1+value);
+translate(0,0,-value);
 
-fill('white');
+fill('green');
 text("HYBRID",0,0);
 pop();
 
@@ -300,9 +300,13 @@ function touchMoved(event) {
 
 function touchMoved() {
   value = value + 0.05;
-/*
-  if (value > 255) {
-    value = 0;
+
+  if (value > 500) {
+    value = value-0.05;
   }
-  */
+/*
+if (value < -500) {
+  value = value-0.05;
+}
+*/
 }
