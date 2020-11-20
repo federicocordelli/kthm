@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background('black');
+  background('blue');
 
 
 
@@ -140,7 +140,7 @@ push();
 rotateZ(value);
 rotateX(value);
 rotateY(value);
-scale(100+value,100+value);
+scale(1+value,1+value);
 
 fill('red');
 text("HYBRID",0,0);
@@ -235,6 +235,7 @@ text("HYBRID",0,0);
 pop();
 
 //scrittine
+/*
   push();
   textFont(Xanh);
   textSize(30);
@@ -245,7 +246,7 @@ pop();
   text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature-",0,0);
   pop();
 
-/*
+
   push();
   textFont(Xanh);
   textSize(30);
@@ -257,6 +258,16 @@ pop();
   pop();
 */
 
+push();
+textFont(Xanh);
+textSize(30);
+textAlign(CENTER);
+translate(windowWidth/2,windowHeight);
+fill('white');
+rotateX(millis() / 2500);
+text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature-",0,0);
+pop();
+
   push();
   textFont(Xanh);
   textSize(30);
@@ -264,7 +275,7 @@ pop();
   //translate(10,10);
   fill('white');
   rotateX(millis() / 2500);
-  text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",20,20);
+  text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",windowWidth/2,2);
   pop();
 
 
