@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background('blue');
+  background('black');
 
 
 
@@ -140,9 +140,9 @@ push();
 rotateZ(value);
 rotateX(value);
 rotateY(value);
-scale(value,value);
+scale(100+value,100+value);
 
-fill('white');
+fill('red');
 text("HYBRID",0,0);
 pop();
 
