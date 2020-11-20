@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background('red');
+  background('blue');
 
 
 
@@ -261,10 +261,10 @@ pop();
   textFont(Xanh);
   textSize(30);
   textAlign(CENTER);
-  translate(10,10);
+  //translate(10,10);
   fill('white');
   rotateX(millis() / 2500);
-  text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",0,0);
+  text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",20,20);
   pop();
 
 
@@ -288,7 +288,7 @@ function touchMoved(event) {
 */
 
 function touchMoved() {
-  value = value + 5;
+  value = value + 0.05;
 /*
   if (value > 255) {
     value = 0;
