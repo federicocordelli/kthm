@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background('black');
+  background('blue');
 
 
 
@@ -176,7 +176,7 @@ rotateZ(value);
 rotateX(value);
 rotateY(value);
 scale(1+value,1+value);
-translate(0,0,value*160);
+translate(0,0,value*200);
 
 fill('peach');
 textAlign(CENTER, CENTER);
@@ -188,7 +188,7 @@ rotateZ(value);
 rotateX(value);
 rotateY(value);
 scale(1+value,1+value);
-translate(0,0,-value*160);
+translate(0,0,-value*200);
 
 fill('orange');
 textAlign(CENTER, CENTER);
@@ -292,7 +292,7 @@ push();
 textFont(Xanh);
 textSize(30);
 textAlign(LEFT);
-translate(0,0);
+translate(30,30);
 fill('white');
 rotateX(millis() / 2500);
 text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature-",0,0);
@@ -302,7 +302,7 @@ pop();
   textFont(Xanh);
   textSize(30);
   textAlign(LEFT);
-  translate(30,30);
+  translate(width-30,height-30);
   fill('white');
   rotateX(millis() / 2500);
   text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",0,0);
@@ -331,7 +331,7 @@ function touchMoved(event) {
 function touchMoved() {
   value = value + 0.05;
 
-  if (value > 10) {
+  if (value > 2) {
     value = value - 0.05;
   }
 /*
