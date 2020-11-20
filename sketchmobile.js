@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background('blue');
+  background('black');
 
 
 
@@ -178,7 +178,7 @@ rotateY(value);
 scale(1+value,1+value);
 translate(0,0,value*200);
 
-fill('peach');
+fill('azure');
 textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
@@ -191,6 +191,32 @@ scale(1+value,1+value);
 translate(0,0,-value*200);
 
 fill('orange');
+textAlign(CENTER, CENTER);
+text("HYBRID",0,0);
+pop();
+
+
+push();
+rotateZ(value);
+rotateX(value);
+rotateY(value);
+scale(1+value,1+value);
+translate(0,0,value*300);
+
+fill('pink');
+textAlign(CENTER, CENTER);
+text("HYBRID",0,0);
+pop();
+
+
+push();
+rotateZ(value);
+rotateX(value);
+rotateY(value);
+scale(1+value,1+value);
+translate(0,0,-value*300);
+
+fill('white');
 textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
@@ -291,8 +317,9 @@ pop();
 push();
 textFont(Xanh);
 textSize(30);
-textAlign(LEFT);
 translate(30,30);
+textAlign(LEFT);
+
 fill('white');
 rotateX(millis() / 2500);
 text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature-",0,0);
@@ -301,8 +328,9 @@ pop();
   push();
   textFont(Xanh);
   textSize(30);
-  textAlign(LEFT);
   translate(width-30,height-30);
+  //textAlign(LEFT);
+
   fill('white');
   rotateX(millis() / 2500);
   text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",0,0);
@@ -331,8 +359,8 @@ function touchMoved(event) {
 function touchMoved() {
   value = value + 0.05;
 
-  if (value > 2) {
-    value = value - 0.05;
+  if (value > 3) {
+    value = 0;
   }
 /*
 if (value < -500) {
