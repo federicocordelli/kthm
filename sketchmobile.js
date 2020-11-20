@@ -165,7 +165,7 @@ function windowResized() {
   return false;
 }
 
-function mouseWheel(event) {
+function touchMoved(event) {
   print(event.delta);
   //move the square according to the vertical scroll amount
   rot += event.delta;
