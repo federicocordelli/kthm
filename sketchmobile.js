@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background('blue');
+  background('black');
 
 
 
@@ -152,7 +152,7 @@ rotateZ(value);
 rotateX(value);
 rotateY(value);
 scale(1+value,1+value);
-translate(0,0,value*1.2);
+translate(0,0,value*120);
 
 fill('yellow');
 textAlign(CENTER, CENTER);
@@ -164,7 +164,7 @@ rotateZ(value);
 rotateX(value);
 rotateY(value);
 scale(1+value,1+value);
-translate(0,0,-value*1.2);
+translate(0,0,-value*120);
 
 fill('green');
 textAlign(CENTER, CENTER);
@@ -176,9 +176,9 @@ rotateZ(value);
 rotateX(value);
 rotateY(value);
 scale(1+value,1+value);
-translate(0,0,value*1.6);
+translate(0,0,value*160);
 
-fill('green');
+fill('peach');
 textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
@@ -188,7 +188,7 @@ rotateZ(value);
 rotateX(value);
 rotateY(value);
 scale(1+value,1+value);
-translate(0,0,-value*1.6);
+translate(0,0,-value*160);
 
 fill('orange');
 textAlign(CENTER, CENTER);
@@ -292,7 +292,7 @@ push();
 textFont(Xanh);
 textSize(30);
 textAlign(LEFT);
-translate(0,30);
+translate(0,0);
 fill('white');
 rotateX(millis() / 2500);
 text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature-",0,0);
@@ -302,7 +302,7 @@ pop();
   textFont(Xanh);
   textSize(30);
   textAlign(LEFT);
-  translate(0,windowHeight-30);
+  translate(30,30);
   fill('white');
   rotateX(millis() / 2500);
   text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",0,0);
@@ -331,7 +331,7 @@ function touchMoved(event) {
 function touchMoved() {
   value = value + 0.05;
 
-  if (value > 50) {
+  if (value > 10) {
     value = value - 0.05;
   }
 /*
