@@ -2,6 +2,7 @@ let Stalinist;
 let Xanh;
 let XanhItal;
 let rot = 0;
+let value = 0;
 
 
 
@@ -35,6 +36,7 @@ function draw() {
 
   //rotateX(time / 1000);
   //rotateZ(time / 1234);
+  /*
   push();
   rotateZ(rot/20000);
   rotateX(rot/5000);
@@ -132,8 +134,107 @@ function draw() {
   fill('white');
   text("HYBRID",0,0);
   pop();
+*/
 
+push();
+rotateZ(value);
+rotateX(value);
+rotateY(value);
+scale(value,value);
 
+fill('white');
+text("HYBRID",0,0);
+pop();
+
+push();
+rotateZ(rot/20000);
+rotateX(rot/5000);
+rotateY(rot/50000);
+scale((-rot+100000)/100000,(-rot+100000)/100000);
+translate(0,0,rot/100);
+
+fill('white');
+text("HYBRID",0,0);
+pop();
+
+push();
+rotateZ(rot/20000);
+rotateX(rot/5000);
+rotateY(rot/50000);
+scale((-rot+100000)/100000,(-rot+100000)/100000);
+translate(0,0,-(rot/100));
+
+fill('white');
+text("HYBRID",0,0);
+pop();
+
+push();
+rotateZ(rot/20000);
+rotateX(rot/5000);
+rotateY(rot/50000);
+scale((-rot+100000)/100000,(-rot+100000)/100000);
+translate(0,0,rot/50);
+
+fill('white');
+text("HYBRID",0,0);
+pop();
+
+push();
+rotateZ(rot/20000);
+rotateX(rot/5000);
+rotateY(rot/50000);
+scale((-rot+100000)/100000,(-rot+100000)/100000);
+translate(0,0,-(rot/50));
+
+fill('white');
+text("HYBRID",0,0);
+pop();
+
+push();
+rotateZ(rot/20000);
+rotateX(rot/5000);
+rotateY(rot/50000);
+scale((-rot+100000)/100000,(-rot+100000)/100000);
+translate(0,0,rot/32.5);
+
+fill('white');
+text("HYBRID",0,0);
+pop();
+
+push();
+rotateZ(rot/20000);
+rotateX(rot/5000);
+rotateY(rot/50000);
+scale((-rot+100000)/100000,(-rot+100000)/100000);
+translate(0,0,-(rot/32.5));
+
+fill('white');
+text("HYBRID",0,0);
+pop();
+
+push();
+rotateZ(rot/20000);
+rotateX(rot/5000);
+rotateY(rot/50000);
+scale((-rot+100000)/100000,(-rot+100000)/100000);
+translate(0,0,rot/25);
+
+fill('white');
+text("HYBRID",0,0);
+pop();
+
+push();
+rotateZ(rot/20000);
+rotateX(rot/5000);
+rotateY(rot/50000);
+scale((-rot+100000)/100000,(-rot+100000)/100000);
+translate(0,0,-(rot/25));
+
+fill('white');
+text("HYBRID",0,0);
+pop();
+
+//scrittine
   push();
   textFont(Xanh);
   textSize(30);
@@ -176,10 +277,21 @@ function windowResized() {
   return false;
 }
 
+/*
 function touchMoved(event) {
   print(event.delta);
   //move the square according to the vertical scroll amount
   rot += event.delta;
   //uncomment to block page scrolling
   return false;
+}
+*/
+
+function touchMoved() {
+  value = value + 5;
+/*
+  if (value > 255) {
+    value = 0;
+  }
+  */
 }
