@@ -151,7 +151,7 @@ rotateZ(value);
 rotateX(value);
 rotateY(value);
 scale(1+value,1+value);
-translate(0,0,value);
+translate(0,0,10+value);
 
 fill('yellow');
 text("HYBRID",0,0);
@@ -162,7 +162,7 @@ rotateZ(value);
 rotateX(value);
 rotateY(value);
 scale(1+value,1+value);
-translate(0,0,-value);
+translate(0,0,-10-value);
 
 fill('green');
 text("HYBRID",0,0);
@@ -301,7 +301,7 @@ function touchMoved(event) {
 function touchMoved() {
   value = value + 0.05;
 
-  if (value > 500) {
+  if (value > 100) {
     value = value-0.05;
   }
 /*
