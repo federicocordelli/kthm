@@ -331,8 +331,8 @@ function touchMoved(event) {
 function touchMoved() {
   value = value + 0.05;
 
-  if (value > 100) {
-    value = value-0.05;
+  if (value > 50) {
+    value = value - 0.05;
   }
 /*
 if (value < -500) {
