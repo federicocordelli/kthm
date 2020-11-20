@@ -12,6 +12,7 @@ XanhItal = loadFont('addons/XanhMono-Italic.ttf');
 }
 
 function setup() {
+  //createCanvas(windowWidth, windowHeight, WEBGL);
   createCanvas(windowWidth, windowHeight, WEBGL);
   noSmooth();
 
@@ -156,7 +157,7 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth,windowHeight);
+  resizeCanvas(windowWidth,windowHeight, WEBGL);
 
   return false;
 }
