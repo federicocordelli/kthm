@@ -25,7 +25,7 @@ function setup() {
 }
 
 function draw() {
-  background('red');
+  background('blue');
 
 
 
@@ -144,6 +144,7 @@ function draw() {
   text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature-",0,0);
   pop();
 
+/*
   push();
   textFont(Xanh);
   textSize(30);
@@ -153,7 +154,17 @@ function draw() {
   rotateX(millis() / 2500);
   text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",0,0);
   pop();
+*/
 
+  push();
+  textFont(Xanh);
+  textSize(30);
+  textAlign(CENTER);
+  translate(10,10);
+  fill('white');
+  rotateX(millis() / 2500);
+  text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",0,0);
+  pop();
 
 
 }
