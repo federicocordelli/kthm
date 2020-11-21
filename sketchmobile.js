@@ -15,7 +15,7 @@ XanhItal = loadFont('addons/XanhMono-Italic.ttf');
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   //createCanvas(displayWidth, displayHeight, WEBGL);
-  noSmooth();
+  Smooth();
 
 
   textFont(Stalinist);
@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background('black');
+  background('red');
 
   push();
   textFont(Xanh);
