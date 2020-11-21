@@ -41,120 +41,15 @@ function draw() {
     push();
     textFont(Xanh);
     textSize(50);
-    //translate(width-30,height-30);
-    //textAlign(LEFT);
+    translate(width-30,height-30);
+    textAlign(LEFT);
     fill('white');
     rotateX(millis() / 2500);
-    text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - ",width-30,height-30);
+    text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - ",30,30);
     pop();
 
 
 
-  //translate(windowWidth/2,windowHeight/2);
-  //rotate(frameCount/50);
-
-
-  //rotateX(time / 1000);
-  //rotateZ(time / 1234);
-  /*
-  push();
-  rotateZ(rot/20000);
-  rotateX(rot/5000);
-  rotateY(rot/50000);
-  scale((-rot+100000)/100000,(-rot+100000)/100000);
-
-  fill('white');
-  text("HYBRID",0,0);
-  pop();
-
-  push();
-  rotateZ(rot/20000);
-  rotateX(rot/5000);
-  rotateY(rot/50000);
-  scale((-rot+100000)/100000,(-rot+100000)/100000);
-  translate(0,0,rot/100);
-
-  fill('white');
-  text("HYBRID",0,0);
-  pop();
-
-  push();
-  rotateZ(rot/20000);
-  rotateX(rot/5000);
-  rotateY(rot/50000);
-  scale((-rot+100000)/100000,(-rot+100000)/100000);
-  translate(0,0,-(rot/100));
-
-  fill('white');
-  text("HYBRID",0,0);
-  pop();
-
-  push();
-  rotateZ(rot/20000);
-  rotateX(rot/5000);
-  rotateY(rot/50000);
-  scale((-rot+100000)/100000,(-rot+100000)/100000);
-  translate(0,0,rot/50);
-
-  fill('white');
-  text("HYBRID",0,0);
-  pop();
-
-  push();
-  rotateZ(rot/20000);
-  rotateX(rot/5000);
-  rotateY(rot/50000);
-  scale((-rot+100000)/100000,(-rot+100000)/100000);
-  translate(0,0,-(rot/50));
-
-  fill('white');
-  text("HYBRID",0,0);
-  pop();
-
-  push();
-  rotateZ(rot/20000);
-  rotateX(rot/5000);
-  rotateY(rot/50000);
-  scale((-rot+100000)/100000,(-rot+100000)/100000);
-  translate(0,0,rot/32.5);
-
-  fill('white');
-  text("HYBRID",0,0);
-  pop();
-
-  push();
-  rotateZ(rot/20000);
-  rotateX(rot/5000);
-  rotateY(rot/50000);
-  scale((-rot+100000)/100000,(-rot+100000)/100000);
-  translate(0,0,-(rot/32.5));
-
-  fill('white');
-  text("HYBRID",0,0);
-  pop();
-
-  push();
-  rotateZ(rot/20000);
-  rotateX(rot/5000);
-  rotateY(rot/50000);
-  scale((-rot+100000)/100000,(-rot+100000)/100000);
-  translate(0,0,rot/25);
-
-  fill('white');
-  text("HYBRID",0,0);
-  pop();
-
-  push();
-  rotateZ(rot/20000);
-  rotateX(rot/5000);
-  rotateY(rot/50000);
-  scale((-rot+100000)/100000,(-rot+100000)/100000);
-  translate(0,0,-(rot/25));
-
-  fill('white');
-  text("HYBRID",0,0);
-  pop();
-*/
 //scritte nuove
 push();
 rotateZ(value);
