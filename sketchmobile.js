@@ -26,9 +26,11 @@ function setup() {
 }
 
 function draw() {
-  background('blue');
+  background('black');
+
   fill('red');
   rect(-windowWidth/2,-windowHeight/2,30,30);
+  rect(-windowWidth/2,((-windowHeight/2)*2)-50,30,30);
 
   push();
   textFont(Xanh);
@@ -43,8 +45,8 @@ function draw() {
     push();
     textFont(Xanh);
     textSize(50);
-    translate(30,30);
-    textAlign(LEFT);
+    translate(-windowWidth/2,-windowHeight/2);
+    textAlign(LEFT,CENTER);
     fill('white');
     rotateX(millis() / 2500);
     text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - ",0,0);
