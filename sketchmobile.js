@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background('black');
+  background('blue');
   fill('red');
   rect(-windowWidth/2,-windowHeight/2,30,30);
 
