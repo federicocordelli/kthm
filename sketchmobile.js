@@ -41,7 +41,7 @@ function draw() {
     push();
     textFont(Xanh);
     textSize(50);
-    translate(300,300);
+    translate(30,30);
     textAlign(LEFT);
     fill('white');
     rotateX(millis() / 2500);
