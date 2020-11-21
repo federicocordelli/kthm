@@ -151,10 +151,10 @@ function draw() {
   translate(-windowWidth/2,-windowHeight/2+10);
   fill('white');
   rotateX(millis() / 2500);
-  text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",0,0);
+  text("Kynetic Typography Interactive Poster - by Federico Cordelli - Kynetic Typography Interactive Poster - by Federico Cordelli - Kynetic Typography Interactive Poster - by Federico Cordelli - Kynetic Typography Interactive Poster - by Federico Cordelli - Kynetic Typography Interactive Poster - by Federico Cordelli -",0,0);
   pop();
 
-  
+
 
 }
 
