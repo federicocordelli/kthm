@@ -35,7 +35,7 @@ function draw() {
   //textAlign(LEFT);
   fill('white');
   rotateX(millis() / 2500);
-  text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - ",width/2,-100);
+  text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - ",3,-100);
   pop();
 
     push();
