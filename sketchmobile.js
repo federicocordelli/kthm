@@ -26,11 +26,11 @@ function setup() {
 }
 
 function draw() {
-  background('black');
+  background('green');
 
   fill('red');
   rect(-windowWidth/2,-windowHeight/2,30,30);
-  rect(-windowWidth/2,((-windowHeight/2)*2)-50,30,30);
+  rect(-windowWidth/2,(windowHeight/2)-50,30,30);
 
   push();
   textFont(Xanh);
@@ -45,7 +45,7 @@ function draw() {
     push();
     textFont(Xanh);
     textSize(50);
-    translate(-windowWidth/2,-windowHeight/2);
+    translate(-windowWidth/2,(-windowHeight/2)+25);
     textAlign(LEFT,CENTER);
     fill('white');
     rotateX(millis() / 2500);
