@@ -26,7 +26,9 @@ function setup() {
 }
 
 function draw() {
-  background('red');
+  background('black');
+  fill('red');
+  rect(0,0,30,30);
 
   push();
   textFont(Xanh);
