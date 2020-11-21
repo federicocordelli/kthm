@@ -15,7 +15,7 @@ XanhItal = loadFont('addons/XanhMono-Italic.ttf');
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   //createCanvas(displayWidth, displayHeight, WEBGL);
-  //Smooth();
+  noSmooth();
 
 
   textFont(Stalinist);
@@ -45,7 +45,7 @@ function draw() {
     textAlign(LEFT);
     fill('white');
     rotateX(millis() / 2500);
-    text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - ",30,30);
+    text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - ",0,0);
     pop();
 
 
