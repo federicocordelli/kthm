@@ -28,6 +28,26 @@ function setup() {
 function draw() {
   background('black');
 
+  push();
+  textFont(Xanh);
+  textSize(50);
+  //translate(30,30);
+  //textAlign(LEFT);
+  fill('white');
+  rotateX(millis() / 2500);
+  text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - ",30,30);
+  pop();
+
+    push();
+    textFont(Xanh);
+    textSize(50);
+    //translate(width-30,height-30);
+    //textAlign(LEFT);
+    fill('white');
+    rotateX(millis() / 2500);
+    text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - ",width-30,height-30);
+    pop();
+
 
 
   //translate(windowWidth/2,windowHeight/2);
@@ -142,7 +162,7 @@ rotateX(value);
 rotateY(value);
 scale(1+value,1+value);
 
-fill('red');
+fill('white');
 textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
@@ -154,7 +174,7 @@ rotateY(value);
 scale(1+value,1+value);
 translate(0,0,value*120);
 
-fill('yellow');
+fill('white');
 textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
@@ -166,7 +186,7 @@ rotateY(value);
 scale(1+value,1+value);
 translate(0,0,-value*120);
 
-fill('green');
+fill('white');
 textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
@@ -178,7 +198,7 @@ rotateY(value);
 scale(1+value,1+value);
 translate(0,0,value*200);
 
-fill('azure');
+fill('white');
 textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
@@ -190,7 +210,7 @@ rotateY(value);
 scale(1+value,1+value);
 translate(0,0,-value*200);
 
-fill('orange');
+fill('white');
 textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
@@ -203,7 +223,7 @@ rotateY(value);
 scale(1+value,1+value);
 translate(0,0,value*300);
 
-fill('pink');
+fill('white');
 textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
@@ -221,120 +241,57 @@ textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
 
-//scritte da eliminare
-
 push();
-rotateZ(rot/20000);
-rotateX(rot/5000);
-rotateY(rot/50000);
-scale((-rot+100000)/100000,(-rot+100000)/100000);
-translate(0,0,rot/50);
+rotateZ(value);
+rotateX(value);
+rotateY(value);
+scale(1+value,1+value);
+translate(0,0,value*400);
 
 fill('white');
+textAlign(CENTER, CENTER);
+text("HYBRID",0,0);
+pop();
+
+
+push();
+rotateZ(value);
+rotateX(value);
+rotateY(value);
+scale(1+value,1+value);
+translate(0,0,-value*400);
+
+fill('white');
+textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
 
 push();
-rotateZ(rot/20000);
-rotateX(rot/5000);
-rotateY(rot/50000);
-scale((-rot+100000)/100000,(-rot+100000)/100000);
-translate(0,0,-(rot/50));
+rotateZ(value);
+rotateX(value);
+rotateY(value);
+scale(1+value,1+value);
+translate(0,0,value*500);
 
 fill('white');
+textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
+
 
 push();
-rotateZ(rot/20000);
-rotateX(rot/5000);
-rotateY(rot/50000);
-scale((-rot+100000)/100000,(-rot+100000)/100000);
-translate(0,0,rot/32.5);
+rotateZ(value);
+rotateX(value);
+rotateY(value);
+scale(1+value,1+value);
+translate(0,0,-value*500);
 
 fill('white');
+textAlign(CENTER, CENTER);
 text("HYBRID",0,0);
 pop();
-
-push();
-rotateZ(rot/20000);
-rotateX(rot/5000);
-rotateY(rot/50000);
-scale((-rot+100000)/100000,(-rot+100000)/100000);
-translate(0,0,-(rot/32.5));
-
-fill('white');
-text("HYBRID",0,0);
-pop();
-
-push();
-rotateZ(rot/20000);
-rotateX(rot/5000);
-rotateY(rot/50000);
-scale((-rot+100000)/100000,(-rot+100000)/100000);
-translate(0,0,rot/25);
-
-fill('white');
-text("HYBRID",0,0);
-pop();
-
-push();
-rotateZ(rot/20000);
-rotateX(rot/5000);
-rotateY(rot/50000);
-scale((-rot+100000)/100000,(-rot+100000)/100000);
-translate(0,0,-(rot/25));
-
-fill('white');
-text("HYBRID",0,0);
-pop();
-
 
 //scrittine
-/*
-  push();
-  textFont(Xanh);
-  textSize(30);
-  textAlign(CENTER);
-  translate(-windowWidth/2,windowHeight/2-20);
-  fill('white');
-  rotateX(millis() / 2500);
-  text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature-",0,0);
-  pop();
-
-
-  push();
-  textFont(Xanh);
-  textSize(30);
-  textAlign(CENTER);
-  translate(-windowWidth/2,-windowHeight/2+10);
-  fill('white');
-  rotateX(millis() / 2500);
-  text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",0,0);
-  pop();
-*/
-
-push();
-textFont(Xanh);
-textSize(30);
-translate(30,30);
-textAlign(LEFT);
-
-fill('white');
-rotateX(millis() / 2500);
-text("Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature - Hybridisation is the Lev Manovich's therm to define a specific new digital media nature-",0,0);
-pop();
-
-  push();
-  textFont(Xanh);
-  textSize(30);
-  translate(width-30,height-30);
-  //textAlign(LEFT);
-
-  fill('white');
-  rotateX(millis() / 2500);
-  text("Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli - Kynetic Typography Manifesto - by Federico Cordelli -",0,0);
-  pop();
 
 
 }
@@ -359,7 +316,7 @@ function touchMoved(event) {
 function touchMoved() {
   value = value + 0.05;
 
-  if (value > 3) {
+  if (value > 3.1) {
     value = 0;
   }
 /*
